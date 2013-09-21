@@ -1,0 +1,25 @@
+# Disable the startup message.
+startup_message off
+
+# Use a 10k line scrollback buffer.
+defscrollback 10000
+
+# Redraws the screen after using vim, etc.
+altscreen on
+
+# Use bright colors for bold text.
+attrcolor b ".I"
+
+# Set the terminal.
+term xterm
+
+# If the terminal hangs up abruptly detach and keep screen running in the background.
+autodetach on
+
+# Configure the status line.
+hardstatus off
+hardstatus alwayslastline '%{= kd} %{= kd}%-w%{= kr}[%{= kW}%n %t%{= kr}]%{= kd}%+w %-= %{kW} %D %M %d %Y%{= kc} %C%A%{-}'
+
+# Add the hostname to the default shell title.
+shelltitle "$ |$HOSTNAME"
+
