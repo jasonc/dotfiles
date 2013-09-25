@@ -25,7 +25,7 @@ export PATH
 # Aliases
 alias ll='ls -l'			# Long listed format for ls.
 alias vi='vim'				# Improved vi.
-alias dr='screen -dr'			# Quickly resume screen session.
+alias dr='screen -dr || screen'		# Quickly resume a screen session or start one.
 alias grpe='grep'			# Fix a common typo.
 
 # Some things only work on Linux.
