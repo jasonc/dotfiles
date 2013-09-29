@@ -27,6 +27,7 @@ alias ll='ls -l'			# Long listed format for ls.
 alias vi='vim'				# Improved vi.
 alias dr='screen -dr || screen'		# Quickly resume a screen session or start one.
 alias grpe='grep'			# Fix a common typo.
+alias utc='TZ=UTC date'			# Time in UTC.
 
 # Some things only work on Linux.
 if [ $OSTYPE == "linux-gnu" ]
@@ -39,6 +40,12 @@ then
   alias egrep='egrep --color=auto'	# Colorize
 else
   alias d='date +%Y-%m-%d'		# Useful for backing up files.  Example: cp hosts hosts.`d`
+fi
+
+# rbenv
+if [ -e ~/.rbenvrc ]
+then
+  . ~/.rbenvrc
 fi
 
 # Increase nofile (max number of open files)
