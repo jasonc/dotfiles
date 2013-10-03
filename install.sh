@@ -2,7 +2,7 @@
 
 DOT_FILES_DIR=~/.dotfiles
 
-if [ -e ~/.dotfiles ]
+if [ -e ${DOT_FILES_DIR} ]
 then
   echo "${DOT_FILES_DIR} already exists.  Exiting."
   exit 1
