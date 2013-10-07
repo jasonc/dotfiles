@@ -1,6 +1,6 @@
 .PHONY: install
 install: 
-	@for SOURCE_DOTFILE in `ls | egrep -v "install.sh|Makefile|README.md"` ; \
+	@for SOURCE_DOTFILE in `ls | egrep -v "install.sh|Makefile|README.md|bashrc_local"` ; \
 	do \
 		echo "Installing $${SOURCE_DOTFILE}." ; \
 		DEST_DOTFILE=~/.$${SOURCE_DOTFILE} ; \

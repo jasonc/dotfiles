@@ -50,3 +50,9 @@ fi
 
 # Increase nofile (max number of open files)
 ulimit -n 4096 2>/dev/null
+
+# Custom settings on a per-server basis.
+if [ -e ~/.bashrc_local ]
+then
+  . ~/.bashrc_local
+fi
