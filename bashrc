@@ -19,7 +19,7 @@ PS1="[\u@\h \w]\$ "
 export PS1
 
 # Set the PATH.
-PATH=$PATH:/sbin:/usr/sbin:/usr/xpg4/bin:/opt/csw/bin:/usr/openwin/bin:/opt/tivoli/tsm/client/ba/bin:/usr/openv/netbackup/bin:/opt/emc/SYMCLI/bin:~/bin:~/scripts
+PATH=/usr/xpg4/bin:$PATH:/sbin:/usr/sbin:/opt/csw/bin:/usr/openwin/bin:/opt/tivoli/tsm/client/ba/bin:/usr/openv/netbackup/bin:/opt/emc/SYMCLI/bin:~/bin:~/scripts
 export PATH
 
 # Aliases
