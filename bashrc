@@ -48,6 +48,9 @@ then
   . ~/.rbenvrc
 fi
 
+# Vagrant
+export VAGRANT_DEFAULT_PROVIDER=libvirt 
+
 # Increase nofile (max number of open files)
 ulimit -n 4096 2>/dev/null
 
