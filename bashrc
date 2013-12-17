@@ -48,6 +48,12 @@ then
   . ~/.rbenvrc
 fi
 
+# Python
+if [ -e ~/.pythonstartup.py ]
+then
+  export PYTHONSTARTUP=~/.pythonstartup.py
+fi
+
 # Vagrant
 export VAGRANT_DEFAULT_PROVIDER=libvirt 
 
