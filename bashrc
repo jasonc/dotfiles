@@ -38,6 +38,7 @@ then
   alias ls='ls --color=auto'		# Colorize
   alias grep='grep --color=auto'	# Colorize
   alias egrep='egrep --color=auto'	# Colorize
+  alias tree='tree -C'			# Colorize
 else
   alias d='date +%Y-%m-%d'		# Useful for backing up files.  Example: cp hosts hosts.`d`
 fi
