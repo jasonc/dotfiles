@@ -14,6 +14,10 @@ set -o vi
 HISTFILESIZE=50000
 export HISTFILESIZE
 
+# Do not store duplicates in history or commands that start with a space.
+HISTCONTROL=ignoreboth
+export HISTCONTROL
+
 # Set the prompt.
 PS1="[\u@\h \w]\$ "
 export PS1
