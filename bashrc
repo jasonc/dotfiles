@@ -65,6 +65,9 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 # Increase nofile (max number of open files)
 ulimit -n 4096 2>/dev/null
 
+# Srsly ansible.
+export ANSIBLE_NOCOWS=1
+
 # Custom settings on a per-server basis.
 if [ -e ~/.bashrc_local ]
 then
