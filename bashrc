@@ -1,9 +1,7 @@
 # .bashrc
 
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+[ -f /etc/bashrc ] && . /etc/bashrc
 
 # User specific aliases and functions
 
@@ -51,16 +49,10 @@ fi
 [ $(grep -i ubuntu /etc/os-release 2>/dev/null | wc -l) -gt 0 ] && alias docker='docker.io'
 
 # rbenv
-if [ -e ~/.rbenvrc ]
-then
-  . ~/.rbenvrc
-fi
+[ -e ~/.rbenvrc ] && . ~/.rbenvrc
 
 # Python
-if [ -e ~/.pythonstartup.py ]
-then
-  export PYTHONSTARTUP=~/.pythonstartup.py
-fi
+[ -e ~/.pythonstartup.py ] && export PYTHONSTARTUP=~/.pythonstartup.py
 
 # Vagrant
 export VAGRANT_DEFAULT_PROVIDER=libvirt 
@@ -72,7 +64,4 @@ ulimit -n 4096 2>/dev/null
 export ANSIBLE_NOCOWS=1
 
 # Custom settings on a per-server basis.
-if [ -e ~/.bashrc_local ]
-then
-  . ~/.bashrc_local
-fi
+[ -e ~/.bashrc_local ] && . ~/.bashrc_local
