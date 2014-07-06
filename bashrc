@@ -47,6 +47,9 @@ else
   alias d='date +%Y-%m-%d'		# Useful for backing up files.  Example: cp hosts hosts.`d`
 fi
 
+# Ubuntu specific alias for docker.
+[ $(grep -i ubuntu /etc/os-release 2>/dev/null | wc -l) -gt 0 ] && alias docker='docker.io'
+
 # rbenv
 if [ -e ~/.rbenvrc ]
 then
