@@ -43,6 +43,7 @@ then
   alias tree='tree -C'			# Colorize
 else
   alias d='date +%Y-%m-%d'		# Useful for backing up files.  Example: cp hosts hosts.`d`
+  alias md5sum='shasum'			# Mac doesn't ship with md5sum.
 fi
 
 # Ubuntu specific alias for docker.
