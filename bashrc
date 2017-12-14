@@ -25,25 +25,30 @@ PATH=/usr/xpg4/bin:$PATH:/sbin:/usr/sbin:/opt/csw/bin:/usr/openwin/bin:/opt/tivo
 export PATH
 
 # Aliases
-alias ll='ls -l'			# Long listing format for ls.
-alias vi='vim'				# Improved vi.
-alias dr='screen -dr || screen'		# Quickly resume a screen session or start one.
-alias grpe='grep'			# Fix a common typo.
-alias utc='TZ=UTC date'			# Time in UTC.
+alias ll='ls -l'                        # Long listing format for ls.
+alias lsd='ls -ld'                      # Long listing format, non-recursive for directories.
+alias vi='vim'                          # Improved vi.
+alias dr='screen -dr || screen'         # Quickly resume a screen session or start one.
+alias grpe='grep'                       # Fix a common typo.
+alias utc='TZ=UTC date'                 # Time in UTC.
+alias vu='vagrant up'                   # Vagrant shortcuts
+alias vs='vagrant ssh'                  # ""
+alias vuvs='vagrant up ; vagrant ssh'   # ""
 
 # Some things only work on Linux.
 if [ $OSTYPE == "linux-gnu" ]
 then
-  alias ct='column -t'			# Pretty print help.
-  alias d='date +%F'			# Useful for backing up files.  Example: cp hosts hosts.`d`
-  alias dfc='df -hPT | column -t'	# Easy to read df output.
-  alias ls='ls --color=auto'		# Colorize
-  alias grep='grep --color=auto'	# Colorize
-  alias egrep='egrep --color=auto'	# Colorize
-  alias tree='tree -C'			# Colorize
+  alias ct='column -t'                   # Pretty print help.
+  alias d='date +%F'                     # Useful for backing up files.  Example: cp hosts hosts.`d`
+  alias dfc='df -hPT | column -t'        # Easy to read df output.
+  alias ls='ls --color=auto'             # Colorize
+  alias grep='grep --color=auto'         # Colorize
+  alias egrep='egrep --color=auto'       # Colorize
+  alias tree='tree -C'                   # Colorize
 else
-  alias d='date +%Y-%m-%d'		# Useful for backing up files.  Example: cp hosts hosts.`d`
-  alias md5sum='shasum'			# Mac doesn't ship with md5sum.
+  alias d='date +%Y-%m-%d'               # Useful for backing up files.  Example: cp hosts hosts.`d`
+  alias md5sum='shasum'                  # Mac doesn't ship with md5sum.
+  alias macvim='/Applications/MacVim.app/Contents//MacOS/MacVim'
 fi
 
 # Ubuntu specific alias for docker.
