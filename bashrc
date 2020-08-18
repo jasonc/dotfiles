@@ -13,7 +13,7 @@ HISTFILESIZE=50000
 export HISTFILESIZE
 
 # Do not store duplicates in history or commands that start with a space.
-HISTCONTROL=ignoreboth
+HISTCONTROL=ignoreboth:erasedups
 export HISTCONTROL
 
 # Set the prompt.
