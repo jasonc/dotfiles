@@ -76,7 +76,7 @@ export ANSIBLE_NOCOWS=1
 [ -e ~/.bashrc_local ] && . ~/.bashrc_local
 
 # Some things are only for Macs.
-if [ $OSTYPE == "darwin19" ]
+if [[ $OSTYPE == darwin* ]]
 then
   # Aliases
   alias ll='ls -lG'                        # Long listing format for ls.
