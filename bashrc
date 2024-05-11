@@ -54,9 +54,6 @@ else
   alias macvim='/Applications/MacVim.app/Contents//MacOS/MacVim'
 fi
 
-# Ubuntu specific alias for docker.
-[ $(grep -i ubuntu /etc/os-release 2>/dev/null | wc -l) -gt 0 ] && alias docker='docker.io'
-
 # rbenv
 [ -e ~/.rbenvrc ] && . ~/.rbenvrc
 
