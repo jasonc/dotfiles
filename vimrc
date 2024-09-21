@@ -1,7 +1,7 @@
 " Beautify
 set bg=dark
 colorscheme ir_black
-set guifont=Source\ Code\ Pro:h16
+set guifont=Source\ Code\ Pro:h20
 
 " Turn on syntax highlighting.
 syntax on
