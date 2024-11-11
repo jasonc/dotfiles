@@ -48,6 +48,9 @@ then
   alias grep='grep --color=auto'         # Colorize
   alias egrep='egrep --color=auto'       # Colorize
   alias tree='tree -C'                   # Colorize
+  grep -qi 'debian' /etc/os-release 2>/dev/null && alias u='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+  grep -qi 'rhel' /etc/os-release 2>/dev/null && alias u='sudo dnf upgrade -y && sudo dnf autoremove -y'
+  grep -qi 'arch' /etc/os-release 2>/dev/null && alias u='sudo pacman -Syu --noconfirm && sudo pacman -Rns $(sudo pacman -Qtdq) --noconfirm'
 else
   alias d='date +%Y-%m-%d'               # Useful for backing up files.  Example: cp hosts hosts.`d`
   alias md5sum='shasum'                  # Mac doesn't ship with md5sum.
