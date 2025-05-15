@@ -48,7 +48,7 @@ then
   alias grep='grep --color=auto'         # Colorize
   alias egrep='egrep --color=auto'       # Colorize
   alias tree='tree -C'                   # Colorize
-  grep -qi 'debian' /etc/os-release 2>/dev/null && alias u='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+  grep -qi 'debian' /etc/os-release 2>/dev/null && alias u='sudo apt update && sudo DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a apt upgrade -y && sudo apt autoremove -y'
   grep -qi 'rhel' /etc/os-release 2>/dev/null && alias u='sudo dnf upgrade -y && sudo dnf autoremove -y'
   grep -qi 'arch' /etc/os-release 2>/dev/null && alias u='sudo pacman -Syu --noconfirm && sudo pacman -Rns $(sudo pacman -Qtdq) --noconfirm'
 else
