@@ -11,7 +11,7 @@ altscreen on
 attrcolor b ".I"
 
 # Set the terminal.
-term xterm
+term xterm-256color
 
 # If the terminal hangs up abruptly detach and keep screen running in the background.
 autodetach on
