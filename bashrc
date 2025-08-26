@@ -28,7 +28,8 @@ export PATH
 alias ll='ls -l'                        # Long listing format for ls.
 alias lsd='ls -ld'                      # Long listing format, non-recursive for directories.
 alias vi='vim'                          # Improved vi.
-alias dr='screen -dr || screen'         # Quickly resume a screen session or start one.
+alias dr='screen -dr || screen'         # Quickly resume a screen session or start one. (Detach & Reattach)
+alias t='tmux new -A -s main'           # Quickly resume the main tmux session or start one.
 alias grpe='grep'                       # Fix a common typo.
 alias utc='TZ=UTC date'                 # Time in UTC.
 alias vdf='vagrant destroy -f'          # Vagrant shortcuts
